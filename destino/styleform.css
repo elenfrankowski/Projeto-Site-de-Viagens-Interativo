@@ -1,0 +1,111 @@
+/*-----Logo-----*/
+nav .logo {
+    width: 80px;
+    height: auto;
+    margin-left: 0; /* espaço entre o texto e a logo */
+}
+
+.navbar-brand {
+  margin-right: 0;   /* tira espaço do lado direito do texto */
+  padding-right: 0;  /* garante que não tenha espaçamento interno */
+}
+
+/*-----Fundo do Body-----*/
+body{
+    background-color: rgb(151, 195, 231);
+}
+
+/*-----Fundo do Menu-----*/
+.navbar {
+    background-color: #002ab3;
+}
+
+/* -----Título acima dos formulários----- */
+.titulo-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(5, 21, 243, 0.6);
+  color: white;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 20px auto;
+  flex-direction: row; /* garante o texto à esquerda e a logo à direita */
+}
+
+.titulo-site .logo-site {
+  width: 50px;
+  height: auto;
+}
+
+.titulo-site h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/*-----Container do formulário-----*/
+.container.formulario {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 60px auto; /* centraliza na tela */
+}
+
+/*-----Título do formulário-----*/
+.container.formulario h2 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+/*-----Grupos do formulário-----*/
+.formulario .form-group {
+  margin-bottom: 20px;
+}
+
+/*-----Labels-----*/
+.formulario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/*-----Campos de entrada-----*/
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="number"],
+.formulario input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario input::placeholder {
+  color: #aaa;
+}
+
+/*-----Botão-----*/
+.formulario button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(rgb(48, 145, 255)0%, rgb(33, 63, 194)50%, rgb(58, 28, 140)100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.formulario button:hover {
+  opacity: 0.85;
+}

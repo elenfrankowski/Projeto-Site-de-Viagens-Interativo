@@ -1,0 +1,449 @@
+/*-----HEADER-----*/
+* { /*zerar tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*ficar um quadrado*/
+}
+
+/*-----Logo-----*/
+nav .logo {
+    width: 80px;
+    height: auto;
+    margin-left: 0; /* espaço entre o texto e a logo */
+}
+
+.navbar-brand {
+  margin-right: 0;   /* tira espaço do lado direito do texto */
+  padding-right: 0;  /* garante que não tenha espaçamento interno */
+}
+
+/*-----Fundo do Body-----*/
+body{
+    background-color: rgb(151, 195, 231);
+}
+
+/*-----Fundo do Menu-----*/
+.navbar {
+    background-color: #002ab3;
+}
+
+/*-----Carrossel Texto-----*/
+.carousel-item {
+  position: relative;           /* base para posicionamento absoluto do texto */
+}
+
+.carousel-item h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(251, 255, 0);
+  background-color: rgba(18, 122, 207, 0.6);
+  padding: 2px 2px;
+  border-radius: 10px;
+  display: inline-block;
+  width: auto;          /* mantém o fundo do tamanho do texto */
+  text-align: center;
+  z-index: 2;
+}
+.hide {
+    display: none !important; /* O !important garante que não seja sobrescrito */
+    visibility: hidden;
+    opacity: 0;
+}
+.carousel-item p {
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(18, 122, 207, 0.6);
+  padding: 2px 2px;
+  border-radius: 10px;
+  display: inline-block;
+  width: auto;          /* mantém o fundo do tamanho do texto */
+  text-align: center;
+  z-index: 2;
+}
+
+/* Ajuste individual da posição vertical */
+.carousel-item h1 {
+  top: 35%;                     /* altura onde o título aparece */
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  top: 55%;                     /* altura do parágrafo */
+  font-size: 1.5rem;
+}
+
+/*-----Carrossel Imagens-----*/
+.carousel-inner img {
+  width: 100%;        /* ocupa toda a largura */
+  height: 830px;      /* altura menor (ajuste como quiser) */
+  object-fit: cover;  /* corta o excesso sem distorcer */
+  display: block;     /* remove espaçamentos fantasmas */
+  margin: 0;          /* garante que não centralize */
+  padding: 0;
+}
+
+/* ===== SOBRE NÓS ===== */
+.sobre-nos {
+  background: rgba(18, 122, 207, 0.6);
+  border-radius: 20px;
+  padding: 50px 30px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.titulo-sobre {
+  font-family: 'Fredericka the Great', cursive;
+  color: yellow;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.texto-sobre p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: justify;
+}
+
+.imagem-sobre img {
+  width: 100%;          /* ocupa toda a largura da coluna */
+  height: 100%;         /* ocupa toda a altura da coluna */
+  object-fit: cover;    /* mantém proporção e corta o excesso se necessário */
+  border-radius: 0;     /* remove cantos arredondados */
+  border: none;         /* remove borda */
+  transition: transform 0.4s ease;
+}/* ========================= RODAPÉ COMPARTILHADO ========================= */
+
+/* Estilo da seção do rodapé (cor de fundo e padding) */
+section.rodape {
+  padding: 20px 70px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #002ab3; /* Cor da navbar/fundo principal */
+ 
+  position: fixed; bottom: 0; left: 0; width: 100%;
+}
+
+/* Container de conteúdo dentro do rodapé */
+.rodape .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: fixed; bottom: 0; left: 0; width: 100%;
+}
+
+/* Estilo dos parágrafos */
+.rodape p {
+  margin: 5px 0;
+}
+
+/* Links (Voltar ao topo, Privacidade, Termos) */
+.rodape a {
+  color: #fff; /* Branco */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999; }
+.rodape a:hover {
+  color: #ffc107; /* Amarelo de destaque */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  section.rodape {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+}
+.sombra-sobre {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.assinatura {
+  font-size: 1rem;
+  color: yellow;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/*-----Coluna do Quiz-----*/
+main section.quiz {
+    text-align: center;    /* mantém conteúdo centralizado */
+    margin: 5rem auto 0;   /* espaço em cima e centralizado horizontalmente */
+}
+
+.quiz .card-custom {
+    background: rgba(18, 122, 207, 0.6); /* fundo azul transparente */
+    color: yellow;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    max-width: 400px;       /* largura máxima do card */
+    margin: 0 auto;         /* centraliza horizontalmente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz .card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+
+.quiz .card-custom img {
+    display: block;          /* transforma em bloco para aplicar margin auto */
+    margin: 0 auto 20px;     /* centraliza horizontalmente e adiciona espaçamento embaixo */
+    border-radius: 50%;      
+    border: 4px solid rgb(0, 140, 255);
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.quiz .card-custom h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+.quiz .card-custom p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/*-----Botão Quiz-----*/
+main section.quiz .botao {
+    display: block;           /* ocupa a largura do conteúdo */
+    text-align: center;       /* centraliza o link interno */
+    margin-top: 1rem;         /* espaço entre imagem e botão */
+}
+
+main section.quiz .botao a {
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgb(48, 145, 255)0%,rgb(33, 63, 194)50%,rgb(58, 28, 140)100%);
+    display: inline-block;
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: 0.5s ease-in-out;
+}
+
+main section.quiz a:hover {
+    background: #b39b17;
+    border-color: #b39b17;
+    color: #fff;
+}
+
+/* ===== TÍTULO DESTAQUE ===== */
+.titulo-destaque {
+  display: block;                /* permite usar margin auto */
+  width: fit-content;            /* fundo só até o tamanho do texto */
+  margin: 40px auto;             /* centraliza o bloco */
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2rem;
+  background: rgba(18, 122, 207, 0.6);
+  color: yellow;
+  padding: 10px 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+/* ===== CARDS ===== */
+.card-custom {
+  background: rgba(18, 122, 207, 0.6);
+  color: yellow;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-custom img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex-grow: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTÃO DOS CARDS ===== */
+.btn-card {
+  background: linear-gradient(rgb(48, 145, 255)0%,rgb(33, 63, 194)50%,rgb(58, 28, 140)100%);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-card:hover {
+  background: #b39b17;
+  border-color: #b39b17;
+  color: #fff;
+}
+
+
+
+
+/* ===== CONTATO ===== */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  background-color: #002ab3;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.contact-info h3 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-item ion-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  background: #fff;
+  color: #002ab3;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  padding: 40px 50px;
+  background-color: #ffffff;
+}
+
+.contact-form h3 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.8rem;
+  color: #002ab3;
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #002ab3;
+  box-shadow: 0 0 4px rgba(0, 42, 179, 0.3);
+}
+
+.btn-enviar {
+  background-color: #002ab3;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #b39b17;
+}
+.perfil-info {
+  border: 2px solid #ffcc00;     /* Borda amarela */
+  border-radius: 10px;           /* Cantos arredondados */
+  padding: 15px;
+  width: fit-content;            /* Ajusta ao conteúdo */
+  background-color: #e6f0ff;     /* Fundo claro */
+  margin: 20px auto;             /* Centraliza */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 30px 25px;
+  }
+}

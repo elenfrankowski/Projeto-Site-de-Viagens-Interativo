@@ -1,0 +1,286 @@
+/* ========================= GERAL ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif; 
+}
+
+body {
+  background-color: rgb(151, 195, 231);
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #00c9c8;
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: 2px solid #00c9c8;
+  outline-offset: 2px;
+}
+
+/* ========================= LAYOUT ========================= */
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'header' 'main' 'footer';
+  min-height: auto;
+}
+
+header,
+main {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* ========================= QUIZ ========================= */
+#quizz-container {
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  background-color: #002ab3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#question-number {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+#answers-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#answers-box button, .answer-template {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#answers-box button:hover {
+  background-color: #00c9c8;
+  color: white;
+}
+
+.btn-letter {
+  background-color: #002ab3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-weight: 700;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* ========================= RESULTADO ========================= */
+#resultado-geral {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#score-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  color: #333;
+}
+
+#score-container h2 {
+  color: #002ab3;
+  margin-bottom: 15px;
+}
+
+#display-score span {
+  font-weight: 700;
+  display: block;
+  padding: 10px 0;
+}
+
+/* ========================= CARDS LATERAIS ========================= */
+.card-lateral {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease;
+  color: #333;
+}
+
+.card-lateral:hover {
+  transform: translateY(-5px);
+}
+
+.card-imagem {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-imagem img:hover {
+  transform: scale(1.05);
+}
+
+.card-tipo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #002ab3;
+}
+
+.card-lateral h3 {
+  color: #333;
+  margin: 0;
+}
+
+.card-lateral p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card-lateral a .btn-pacote {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00c9c8;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.card-lateral a .btn-pacote:hover {
+  background-color: #009999;
+}
+
+/* Botões do score */
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.botoes button {
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #005fa3;
+}
+
+/* ========================= RODAPÉ ========================= */
+section.rodape {
+  padding: 20px 70px;
+  font-size: 15px;
+
+  background-color: #002ab3;
+}
+
+section.rodape footer.container { 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+section.rodape a:hover {
+  color: #00c9c8;
+}
+
+/* ========================= RESPONSIVIDADE ========================= */
+@media (max-width: 900px) {
+  #resultado-geral {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #score-container, .card-lateral {
+    width: 90%;
+    align-items: center;
+  }
+
+  #quizz-container {
+    padding: 20px;
+  }
+
+  #question {
+    font-size: 1.2rem;
+  }
+
+  #answers-box button {
+    padding: 12px;
+  }
+}

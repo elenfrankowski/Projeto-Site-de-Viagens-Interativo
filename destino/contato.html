@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <title>Site Destino Certeiro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./styleperfil.css">
+  <link rel="stylesheet" href="./style/mobile.css">
+  <title>Menu</title>
+  <script src="./script/index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<!--Menu-->
+<body class="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Destino Certeiro</a>
+    <img src="./imagens/logo-sem-fundo.png" alt="logo" class="logo"> <!--Logo-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Início <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.php">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Conta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastrar_login.php">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-warning my-2 my-sm-0 text-dark" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--Contato-->
+  <br>
+<section class="container my-5">
+  <section class="container my-5 text-center">
+    <h2 class="titulo-destaque mb-4"><u>Fale Conosco!</u></h2>
+  </section>
+
+  <div class="contact-container">
+    <!-- Lado esquerdo -->
+    <div class="contact-info">
+      <h3>Vamos conversar</h3>
+      <p>Estamos abertos para sugestões ou solucionar suas dúvidas.</p>
+
+      <div class="info-item">
+        <ion-icon name="location-outline"></ion-icon>
+        <p><strong>Endereço:</strong> Rua do X, 123 - Florianópolis, SC</p>
+      </div>
+
+      <div class="info-item">
+        <ion-icon name="call-outline"></ion-icon>
+        <p><strong>Telefone:</strong> +55 (48) 99999-9999</p>
+      </div>
+
+      <div class="info-item">
+        <ion-icon name="mail-outline"></ion-icon>
+        <p><strong>Email:</strong> contato@destinocerteiro.com</p>
+      </div>
+
+      <div class="info-item">
+        <ion-icon name="globe-outline"></ion-icon>
+        <p><strong>Site:</strong> www.destinocerteiro.com</p>
+      </div>
+    </div>
+
+    <!-- Lado direito -->
+    <div class="contact-form">
+      <h3>Envie uma mensagem</h3>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nome">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Endereço de Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-enviar">Enviar Mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+<br>
+
+    <!--Rodapé-->
+    <section class="rodape">
+      <footer class="container">
+        <p><a href="#">Voltar ao topo</a></p>
+        <p>&copy; 2025 Certeiro, Destino &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p> 
+      </footer>
+    </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
